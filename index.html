@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CRUD  </title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+    <h1>Cadastro de Usuários</h1>
+
+    <div class="form-section">
+        <h2>Cadastrar Usuário</h2>
+        <input type="text" id="userName" placeholder="Nome">
+        <input type="email" id="userEmail" placeholder="Email">
+        <input type="tel" id="userPhone" placeholder="Telefone">
+        <button onclick="addUser()">Adicionar Usuário</button>
+    </div>
+
+    <div class="list-section">
+        <h2>Lista de Usuários</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="userTableBody">
+                <!-- Os usuários cadastrados serão listados aqui -->
+            </tbody>
+        </table>
+    </div>
+
+    
+
+</body>
+</html>
+
